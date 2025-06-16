@@ -1,0 +1,36 @@
+{
+  "name": "gitlab-search-get-lucky",
+  "version": "1.0.0",
+  "description": "Chrome extension for instant GitLab search navigation",
+  "main": "dist/content.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist/",
+    "package": "npm run clean && npm run build && zip -r gitlab-search-get-lucky.zip . -x node_modules/\\* .git/\\* \\*.ts tsconfig.json package*.json"
+  },
+  "keywords": [
+    "gitlab",
+    "search",
+    "navigation",
+    "productivity",
+    "chrome-extension",
+    "developer-tools"
+  ],
+  "author": {
+    "name": "leo25190",
+    "url": "https://github.com/leo25190"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/leo25190/gitlab-search-get-lucky",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leo25190/gitlab-search-get-lucky.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leo25190/gitlab-search-get-lucky/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
