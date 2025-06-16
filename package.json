@@ -1,13 +1,13 @@
 {
   "name": "gitlab-search-get-lucky",
   "version": "1.0.0",
-  "description": "Chrome extension for instant GitLab search navigation",
+  "description": "Chrome extension for instant GitLab search navigation with Enter key",
   "main": "dist/content.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
     "clean": "rm -rf dist/",
-    "package": "npm run clean && npm run build && zip -r gitlab-search-get-lucky.zip . -x node_modules/\\* .git/\\* \\*.ts tsconfig.json package*.json"
+    "package": "npm run build && zip -r release.zip manifest.json popup.html icons/ dist/ README.md LICENSE PRIVACY_POLICY.md"
   },
   "keywords": [
     "gitlab",
