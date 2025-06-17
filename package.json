@@ -1,6 +1,6 @@
 {
   "name": "gitlab-search-get-lucky",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chrome extension for instant GitLab search navigation with Enter key",
   "main": "dist/content.js",
   "scripts": {
